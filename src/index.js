@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 
+// Stylings
+import './index.css';
+import 'bootstrap/dist/css/bootstrap.css';
+// Components
+import App from './App';
+import LoginComponent from './components/login-component';
+
 ReactDOM.render(
     <Router>
-        <Route path='/' component={App} />
+        <Route path='/' component={LoginComponent} />
+        {/* <Route path='/user' component={} /> */}
     </Router>
     , document.getElementById('root'));
 
