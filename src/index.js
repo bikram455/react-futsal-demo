@@ -6,14 +6,18 @@ import * as serviceWorker from './serviceWorker';
 // Stylings
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import './styles/css/style.css';
+import './styles/css/login.css';
+
 // Components
-import App from './App';
 import LoginComponent from './components/login-component';
+// import UserComponent from './components/user-component';
+import dashboardComponent from './components/dashboard-component';
 
 ReactDOM.render(
     <Router>
-        <Route path='/' component={LoginComponent} />
-        {/* <Route path='/user' component={} /> */}
+        <Route exact path='/' component={LoginComponent} />
+        <Route path='/dashboard' component={dashboardComponent} />
     </Router>
     , document.getElementById('root'));
 
