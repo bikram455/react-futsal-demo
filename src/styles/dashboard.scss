@@ -11,12 +11,13 @@
 }
 .sidebar{
     height: 100%;
-    width: 5%;
+    width: 8%;
 }
 .content{
     height: 100%;
-    width: 95%;
+    width: 92%;
     background: #fff;
+    color: black;
 }
 .app-logo{
     height: 50px;
@@ -27,5 +28,11 @@
 }
 .menu-item{
     padding: 20px;
-    border: 1px solid;
+    border-top: 1px solid rgba(255,255,255,.5);
+}
+.bottom-item{
+    border-bottom: 1px solid rgba(255,255,255,.5);
+}
+.current-view {
+    border-right: 5px solid #49ad60;
 }

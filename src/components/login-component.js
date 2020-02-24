@@ -36,7 +36,7 @@ class LoginComponent extends Component {
                                     <div className="col-md-12 input-field top"><TextField name="username" label="Username" variant="outlined" onChange={this.entry} /></div>
                                     <div className="col-md-12 input-field"><TextField name="password" label="Password" type="password" variant="outlined" onChange={this.entry} /></div>
                                     <div className="col-md-12 input-field"><Button variant="contained" onClick={this.login}>Login</Button></div>
-                                    <div className="col-md-12 input-field bottom"><a>Forgot password</a></div>
+                                    {/* <div className="col-md-12 input-field bottom"><a>Forgot password</a></div> */}
                                 </div>
                             </form>
                         </div>
